@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/enable-cors: "false"
 spec:
   rules:
-  - host: ticketing.dev
+  - host: www.therasamshop.com
     http:
       paths:
       - pathType: Prefix
