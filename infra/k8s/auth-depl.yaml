@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: acrworkflow1670915009725.azurecr.io/auth
+          image: akregistry.azurecr.io/auth
           env:
             - name: JWT_KEY
               valueFrom:
