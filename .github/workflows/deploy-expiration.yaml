@@ -3,6 +3,8 @@ name: deploy-expiration
     push:
         branches:
             - main
+        paths:
+        - "expiration/**"
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: registry
