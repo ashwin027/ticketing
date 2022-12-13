@@ -3,6 +3,8 @@ name: deploy-orders
     push:
         branches:
             - main
+        paths:
+        - "orders/**"
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: registry
