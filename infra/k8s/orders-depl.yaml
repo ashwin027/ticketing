@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: orders
-          image: ashwin027/orders
+          image: akregistry.azurecr.io/orders
           env:
             - name: JWT_KEY
               valueFrom:
@@ -30,7 +30,6 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.name
-          imagePullPolicy: Never
           ports:
             - containerPort: 3000
 ---
