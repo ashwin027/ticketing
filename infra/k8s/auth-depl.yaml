@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: ashwin027/auth
+          image: acrworkflow1670915009725.azurecr.io/auth
           env:
             - name: JWT_KEY
               valueFrom:
@@ -22,7 +22,6 @@ spec:
                   key: JWT_KEY
             - name: MONGO_URI
               value: "mongodb://auth-mongo-srv:27017/auth"
-          imagePullPolicy: Never
           ports:
             - containerPort: 3000
 ---
