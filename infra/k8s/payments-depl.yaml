@@ -35,7 +35,6 @@ spec:
                 secretKeyRef:
                   name: stripe-secret
                   key: STRIPE_KEY
-          imagePullPolicy: Never
           ports:
             - containerPort: 3000
 ---

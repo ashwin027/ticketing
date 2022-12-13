@@ -25,6 +25,5 @@ spec:
                   fieldPath: metadata.name
             - name: REDIS_HOST
               value: expiration-redis-srv
-          imagePullPolicy: Never
           ports:
             - containerPort: 3000
