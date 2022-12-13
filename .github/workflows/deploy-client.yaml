@@ -3,6 +3,8 @@ name: deploy-client
     push:
         branches:
             - main
+        paths:
+        - "client/**"
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: registry
