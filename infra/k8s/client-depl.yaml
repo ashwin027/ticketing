@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: client
-        image: ashwin027/client:latest
-        imagePullPolicy: Never
+        image: akregistry.azurecr.io/client
 ---
 apiVersion: v1
 kind: Service
