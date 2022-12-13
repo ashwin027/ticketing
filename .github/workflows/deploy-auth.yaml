@@ -3,6 +3,8 @@ name: deploy-auth
     push:
         branches:
             - main
+        paths:
+        - "auth/**"
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: registry

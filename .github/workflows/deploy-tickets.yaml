@@ -3,6 +3,8 @@ name: deploy-tickets
     push:
         branches:
             - main
+        paths:
+        - "tickets/**"
     workflow_dispatch: {}
 env:
     ACR_RESOURCE_GROUP: registry
